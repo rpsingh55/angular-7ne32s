@@ -1,0 +1,13 @@
+<h2>Seat Booking</h2>
+<div>
+  <button (click)="reserveSeats(1)">Reserve 1 Seat</button>
+  <button (click)="reserveSeats(2)">Reserve 2 Seats</button>
+  <button (click)="reserveSeats(3)">Reserve 3 Seats</button>
+  <!-- Add more buttons for different numbers of seats -->
+
+  <table>
+    <tr *ngFor="let row of seats">
+      <td *ngFor="let seat of row" [class.reserved]="!seat.available">{{ seat.seatNumber }}</td>
+    </tr>
+  </table>
+</div>

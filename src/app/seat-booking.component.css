@@ -1,0 +1,13 @@
+table {
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  background-color: lightgreen;
+}
+
+td.reserved {
+  background-color: lightgray;
+}
